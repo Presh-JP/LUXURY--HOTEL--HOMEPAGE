@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
   background-color: #f5f5f5;
-  font-family: "Poppins", sans-serif;
 }
 
 /* Navigation */
@@ -66,33 +66,6 @@ body {
   color: white;
   border: 2px solid #0822b7eb;
 }
-<<<<<<< HEAD
-@media (min-width: 1200px) {
-  .section2 {
-    padding: 5% 10%;
-  }
-  .section3 {
-    padding: 5% 10%;
-  }
-  .section4 {
-    padding: 5% 10%;
-  }
-}
-@media (max-width: 1024px) {
-  .section1 h1 {
-    font-size: 4rem;
-  }
-  .section1 p {
-    font-size: 2.5rem;
-  }
-  .section2-grid,
-  .section3grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    padding: 2%;
-    height: auto;
-  }
-=======
 
 /* Hamburger Menu */
 .hamburger {
@@ -116,15 +89,10 @@ body {
 
 .hamburger.open span:nth-child(2) {
   opacity: 0;
->>>>>>> 999fe1b8622b54599b08a6a7742ea11de1d5cbef
 }
 
 .hamburger.open span:nth-child(3) {
   transform: rotate(-45deg) translate(7px, -7px);
-}
-
-.hamburger.open span {
-  background-color: white; /* ensure bars are visible against dark nav */
 }
 
 /* Section 1 - Hero */
@@ -235,22 +203,6 @@ body {
   text-align: center;
   margin-bottom: 3rem;
 }
-<<<<<<< HEAD
-.section3-images {
-  text-align: center;
-}
-.section3grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 3%;
-  gap: 30px;
-}
-.section3grid img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 10%;
-=======
 
 .section3grid {
   display: grid;
@@ -268,7 +220,6 @@ body {
   height: 500px;
   object-fit: cover;
   border-radius: 10px;
->>>>>>> 999fe1b8622b54599b08a6a7742ea11de1d5cbef
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
