@@ -1,17 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
   const hamburger = document.getElementById("hamburger");
-  const navLinks = document.getElementById("nav-links");
-  if (!hamburger || !navLinks) return;
+  const navlinks = document.getElementById("navlinks");
 
-  hamburger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-    hamburger.classList.toggle("open");
-  });
-
-  navLinks.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      navLinks.classList.remove("active");
-      hamburger.classList.remove("open");
+  if (hamburger && navlinks) {
+    hamburger.addEventListener("click", () => {
+      hamburger.classList.toggle("open");
+      navlinks.classList.toggle("active");
     });
-  });
+
+    // Optional: close menu when a link is clicked (mobile)
+    navlinks.querySelectorAll("a").forEach((a) => {
+      a.addEventListener("click", () => {
+        hamburger.classList.remove("open");
+        navlinks.classList.remove("active");
+      });
+    });
+  }
 });
