@@ -26,22 +26,23 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="navbar">
-      <div class="navlinks">
-        <li><a href="#HOME">HOME</a></li>
-        <li><a href="#ABOUT">ABOUT</a></li>
-        <li><a href="#ACCOMMODATION">ACCOMMODATION</a></li>
-        <li><a href="#CONTACT">CONTACT</a></li>
-      </div>
-      <div class="logo"><i>LUNA</i></div>
-      <button class="nav-button">RESERVATION</button>
-    </div>
-    <div class="hamburger" id="hamburger">
+    <nav class="navbar">
+      <div class="logo">Luxury Hotel</div>
+
+      <ul class="navlinks" id="navlinks">
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">About</a></li>
+        <li><a href="#section3">Rooms</a></li>
+        <li><a href="#section4">Contact</a></li>
+        <li><button class="nav-button">Book</button></li>
+      </ul>
+
+      <div class="hamburger" id="hamburger">
         <span></span>
         <span></span>
         <span></span>
       </div>
-    </div>
+    </nav>
     <div class="section1">
       <div data-aos="zoom-in" data-aos-duration="2000">
         <h1>Dream Stay</h1>
@@ -225,5 +226,6 @@
     <script>
       AOS.init();
     </script>
+    <script src="script.js"></script>
   </body>
 </html>
