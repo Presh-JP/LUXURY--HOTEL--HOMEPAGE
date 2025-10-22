@@ -21,6 +21,7 @@ body {
   font-weight: bold;
   backdrop-filter: blur(6px);
   width: 100%;
+  z-index: 100;
 }
 .navlinks {
   display: flex;
@@ -57,6 +58,82 @@ body {
   background-color: #0822b7eb;
   color: white;
   border: 2px solid #0822b7eb;
+}
+
+@media (max-width: 480px) {
+  .section1 {
+    padding: 20px;
+    height: 70vh;
+  }
+  .section1 h2 {
+    font-size: 2rem;
+    padding-top: 40%;
+  }
+  .section1 p {
+    font-size: 2rem;
+  }
+  .section2 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    max-width: 1200px;
+    padding: 5%;
+  }
+  .section2 img {
+    width: 100%;
+    height: auto;
+  }
+  .section3grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+    z-index: 110;
+  }
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    background-color: #333;
+    flex-direction: column;
+    width: 150px;
+    border-radius: 5px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: max-height 0.3s ease, opacity 0.25s ease;
+  }
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #444;
+  }
+  .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 8px 12px;
+  }
+  .nav-links.active {
+    max-height: 600px;
+    opacity: 1;
+    visibility: visible;
+  }
+  .section3grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 1200px) {
+  .section2 {
+    padding: 7% 7%;
+  }
+}
+@media (max-width: 768px) {
 }
 .section1 {
   height: 100vh;
@@ -109,12 +186,13 @@ body {
   text-align: center;
   font-weight: bold;
   font-size: 2rem;
+  padding: 7% 7%;
 }
 .section2 h1 {
   text-align: center;
   align-items: center;
   padding-bottom: 1%;
-  padding-top: 5%;
+  padding-top: 2%;
   font-size: 4rem;
   font-weight: bold;
 }
@@ -142,7 +220,7 @@ body {
 }
 
 .section3 {
-  padding-top: 5%;
+  padding: 7% 7%;
   min-height: 100vh;
   width: 100%;
   border-radius: 10%;
@@ -151,8 +229,7 @@ body {
   text-align: center;
   font-size: 4rem;
   font-weight: bold;
-
-  padding-top: 50%;
+  padding-top: 45%;
   font-family: "Poppins", sans-serif;
   color: black;
   text-decoration: none;
@@ -162,7 +239,6 @@ body {
   font-weight: normal;
   padding-bottom: 2%;
   text-align: center;
-  padding: 2%;
 }
 .section3-images {
   gap: 20px;
@@ -171,7 +247,7 @@ body {
 }
 .section3grid {
   display: grid;
-  grid-template-columns: repeat(3, 2fr);
+  grid-template-columns: (3, 2fr);
   padding: 3%;
   border-radius: 10%;
 }
@@ -206,27 +282,25 @@ body {
   cursor: pointer;
 }
 .section3 p {
-  padding-top: 7%;
+  padding-top: 3%;
 }
 
 .section4 {
-  height: 100vh;
-  width: 100%;
   justify-content: center;
   align-items: center;
   color: black;
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  padding-top: 5%;
+  padding-top: 3%;
+  padding: 7% 7%;
 }
 .section4 h1 {
   padding-bottom: 2%;
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  padding-top: 5%;
-
+  padding-top: 2%;
   font-family: "Poppins", sans-serif;
   color: black;
   text-decoration: none;
